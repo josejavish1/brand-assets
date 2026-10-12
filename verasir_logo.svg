@@ -1,0 +1,66 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <title>VERASIR Sovereign Identity</title>
+  <defs>
+    <!-- Background Gradient: Deep Sovereign Void -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1528"/>
+      <stop offset="50%" stop-color="#070D1E"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Outer Perimeter Shield Ring -->
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1E2C4F" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Wing Left: Electric Cyan (Perimeter Defense) -->
+    <linearGradient id="wingLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <!-- Wing Right: Emerald Truth & Verification Checkmark -->
+    <linearGradient id="wingRight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="40%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+
+    <!-- Central Cryptographic Core Beacon -->
+    <radialGradient id="beaconGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="40%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Background Rounded Squircle Container (1:1 Ratio for App Icons & BIMI) -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="url(#shieldBorder)" stroke-width="4"/>
+
+  <!-- 2. Subtle Cryptographic Matrix Grid (Faint Security Geometry) -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#1E2C4F" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.6"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#1E2C4F" stroke-width="1" opacity="0.4"/>
+
+  <!-- 3. Sovereign Heraldic Shield Geometry -->
+  <path d="M256 96 C336 96 376 112 376 112 C376 256 312 344 256 384 C200 344 136 256 136 112 C136 112 176 96 256 96 Z"
+        fill="#0A1329" stroke="#1E2C4F" stroke-width="2" opacity="0.7"/>
+
+  <!-- 4. Monogram "V" — Left Armor Wing (Shield & Cryptographic Ingestion) -->
+  <path d="M152 144 L212 144 L256 288 L232 308 L152 144 Z" fill="url(#wingLeft)"/>
+
+  <!-- 5. Monogram "V" — Right Wing Extends into Ascending Verification Checkmark -->
+  <!-- Represents: Deliverability 100%, DKIM Pass, Zero Spam, eIDAS Seal -->
+  <path d="M228 316 L256 288 L352 128 L392 148 L256 372 L228 316 Z" fill="url(#wingRight)"/>
+
+  <!-- 6. Apex Interlocking Keystones -->
+  <polygon points="256,268 280,224 232,224" fill="#38BDF8" opacity="0.9"/>
+
+  <!-- 7. Central Radiant Beacon Dot (Verasir "brand-dot" Core) -->
+  <circle cx="256" cy="256" r="36" fill="url(#beaconGlow)"/>
+  <circle cx="256" cy="256" r="14" fill="#FFFFFF"/>
+  <circle cx="256" cy="256" r="8" fill="#10B981"/>
+</svg>
